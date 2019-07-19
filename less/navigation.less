@@ -1,14 +1,30 @@
 // Navigation code here
 
-nav{
-    .basic-display(column, center, center);
-;    border: 1px solid grey;
-    border-block-color: grey;
+.navigation{
+    position: fixed;
+    width: 100%;
+    background: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    color: @nav-font;
+    .basic-display(column, space-evenly, center);
+}
 
-        a{
-            order: 2;
-            padding: 20px;
-            text-decoration: none;
-        }
+nav{
+    .basic-display(row, space-evenly, center);
+
+   
+    @media @phone {
+        width: 100%;
     }
+
+    a{
+        font-size: 1.4rem;
+        padding: 20px;
+        text-decoration: none;
+        color: @nav-font;
+    }
+    
+}
+
+
 
