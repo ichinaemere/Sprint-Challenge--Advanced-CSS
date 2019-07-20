@@ -291,6 +291,9 @@ footer {
     width: 100%;
   }
 }
+.home .walk .walk-text .btn:hover {
+  background-color: black;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
