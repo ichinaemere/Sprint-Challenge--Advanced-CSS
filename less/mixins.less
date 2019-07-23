@@ -1,1 +1,27 @@
 // Mixins Here
+
+.font-size(){
+    font-size: 25px;
+}
+
+.basic-display(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-button(@width, @height, @bg-color, @font-color, @font-size){
+    border-radius: 5px;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    font-size: @font-size;
+    .basic-display(row, center, center);
+    border: 2px solid @bg-color;
+
+    @media @phone{
+        width: 100%;
+    }
+}
